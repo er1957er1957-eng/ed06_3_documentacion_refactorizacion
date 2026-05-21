@@ -9,15 +9,39 @@ public class Cliente {
 
     public Cliente(int id, String nombre, String dni, String email, boolean esVip) {
         this.id = id;
-        if(validarNombre(nombre)) {
+        if (validarNombre(nombre)) {
             this.nombre = nombre;
         }
-        if(validarDni(dni)) {
+        if (validarDni(dni)) {
             this.dni = dni;
         }
-        if(validarEmail(email)) {
+        if (validarEmail(email)) {
             this.email = email;
         }
+        this.esVip = esVip;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public String getDni() {
+        return dni;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public boolean isEsVip() {
+        return esVip;
+    }
+
+    public void setEsVip(boolean esVip) {
         this.esVip = esVip;
     }
 
